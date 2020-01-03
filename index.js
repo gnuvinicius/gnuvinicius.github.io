@@ -10,6 +10,8 @@ function setCurrentPosition(position) {
     console.log(position)
     document.querySelector( '.latitude' ).innerHTML = position.coords.latitude;
     document.querySelector( '.longitude' ).innerHTML = position.coords.longitude;
+    document.querySelector( '.platform' ).innerHTML = navigator.platform;
+    document.querySelector( '.userAgent' ).innerHTML = navigator.userAgent;
 
 }
 
